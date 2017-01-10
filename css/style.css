@@ -1,6 +1,6 @@
 body {
   color:#585859;
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .row {
   padding-left:8rem;
@@ -12,6 +12,9 @@ body {
 }
 #inline {
   display: inline-block;
+}
+.h4padding {
+  padding-top:5px;
 }
 /* ---- particles.js container ---- */
 
