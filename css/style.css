@@ -16,6 +16,9 @@ body {
 .h4padding {
   padding-top:5px;
 }
+.font_color_blue {
+    color:#337ab7;
+}
 /* ---- particles.js container ---- */
 
 #particles-js{
