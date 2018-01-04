@@ -19,6 +19,9 @@ body {
 .font_color_blue {
     color:#337ab7;
 }
+.icon_between {
+    margin-left: 10px;
+}
 /* ---- particles.js container ---- */
 
 #particles-js{
