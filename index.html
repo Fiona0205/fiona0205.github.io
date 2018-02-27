@@ -11,6 +11,9 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">  
@@ -32,42 +35,33 @@
     </div>
 
 <div class="container">
-    <!--Skills-->
-    <div class="row">        
-        <div class="col-md-8">
-            <h3 class="font_color_blue">SKILLS</h3>
-            <p>JavaScript | AngularJS | Java | HTML | C# | R | PHP | MySQL | ASP.NET | C++</p>
-        </div>
-    </div>
-    <!--End of Skills-->
     <!--Education-->
     <div class="row">
-            <div class="col-md-8">
-                <h3 class="font_color_blue">EDUCATION</h3>
-                    <h4 class="h4padding">New Jersey Institute of Technology (NJIT), Newark, NJ</h4>
-                    <ul><li><p>M.S. Software Engineering, GPA 3.94/4.0, Expected June 2018</p></li></ul>
-                    <h4 class="h4padding">Tongji University, Shanghai, China</h4>
-                    <ul><li><p>M.E. Electrical Engineering</p></li></ul>
-                    <h4 class="h4padding">Hohai University, Nanjing, China</h4>
-                    <ul><li><p>B.E. Telecommunication Engineering</p></li></ul>
-            </div>
-            <div class="col-md-4">
-            </div>
-    </div>
-    <!--End of Education-->
-    <!--EXPERIENCES-->
-    <div class="row">
-        <div class="col-md-12">
-            <h3 class="font_color_blue">WORKING EXPERIENCE</h3>
+        <div class="col-md-6">
+            <!--Skills-->
+            <h3><i class="fas fa-wrench icon_h3"></i>SKILLS</h3>
+            <div id="skillList"></div>
+            <canvas id="skillChart" width="800" height="600"></canvas>
+            <!--Education-->
+            <h3><i class="fas fa-graduation-cap icon_h3"></i>EDUCATION</h3>
+            <h4 class="h4padding">New Jersey Institute of Technology (NJIT), Newark, NJ</h4>
+            <ul><li><p>M.S. Software Engineering</p></li><li><p>GPA 3.94/4.0</p></li></ul>
+            <h4 class="h4padding">Tongji University, Shanghai, China</h4>
+            <ul><li><p>M.E. Electrical Engineering</p></li></ul>
+            <h4 class="h4padding">Hohai University, Nanjing, China</h4>
+            <ul><li><p>B.E. Telecommunication Engineering</p></li></ul> 
+        </div>
+        <div class="col-md-6">
+            <h3><i class="fas fa-suitcase icon_h3"></i>WORKING EXPERIENCE</h3>
             
-            <h4 class="h4padding">Software Development Intern, <a target="_blank" href="https://www.8sph.com/">8th Sphere</a>, June 2017 — Sep. 2017</h4>
+            <h4 class="h4padding">Software Development Intern, <a target="_blank" href="https://www.8sph.com/">8th Sphere</a>, 2017</h4>
             <ul>
                 <li><p>Implemented functionalities on a large-scale, multi-repository project using AngularJS, Node.js, HTML, LESS and GIT.</p></li>
                 <li><p>Performed Quality Assurance (unit testing and integration testing) on a web-based application using NightWatchJS. </p></li>
                 <li><p>Designed and created unit testing using KARMA.</p></li>
                 <li><p>Worked tightly with a team in an Agile environment.</p></li>
             </ul>
-            <h4 class="h4padding">Full Stack Developer & Founding Team Member, <a target="_blank" href="https://www.youtube.com/embed/-Xs_cGdmCLk">i.D. BIM TECH</a>, June 2015 — Sep. 2016</h4>
+            <h4 class="h4padding">Full Stack Developer & Founding Team Member, <a target="_blank" href="https://www.youtube.com/embed/-Xs_cGdmCLk">i.D. BIM TECH</a>, 2015 — 2016</h4>
             <ul>
                 <li><p>A startup company focuses on cloud-based information management platform for architectural construction projects.</p></li>
                 <li><p>Implemented MVC framework for web application using AngularJS.</p></li>
@@ -75,44 +69,70 @@
                 <li><p>Implemented data transformation using C#, ASP.NET framework.</p></li>
                 <li><p>Contributed to back-end database development using SQL Server.</p></li>
             </ul>
-            <h4 class="h4padding">Volunteer Website Consultant, International Women Association in Pittsburgh, Sep. 2012 — Dec. 2014</h4>
+            <h4 class="h4padding">Front-End Developer, Freelance, 2012 — 2014</h4>
             <ul>
-                <li><p>Advised and made enhancement to website on WordPress.</p></li>
-                <li><p>Implemented a website for board members.</p></li>
-            </ul>
-            <h4 class="h4padding">Summer Research Intern, Carnegie Mellon University, June 2012 — Sep. 2012</h4>
-            <ul>
-                <li><p>Designed and developed a responsive website for Energy Efficient Building — HUB project using HTML, CSS.</p></li>
-                <li><p>Displayed data on front-end using Google Chart API.</p></li>
-                <li><p>Implemented interactive 3D model rendering on the webpage using WebGL.</p></li>
-            </ul>
-            <h4 class="h4padding">Graduate Researcher, Tongji University, Sep. 2008 — Oct. 2011</h4>
-            <ul>
-                <li><p>Developed a program using C++, MFC, OpenFlight and OpenGL that automatically generates 3D models for real-time rendering used in driver training simulator of Subway Line 1 in Bombay India.</p></li>
+                <li><p>Designed and built a responsive website for Energy Efficient Building — HUB project using HTML, CSS, Google Chart API, and WebGL.</p></li>
+                <li><p>Maintained a website for International Women association in Pittsburgh.</p></li>
+                <li><p>Built an eCommerce website using HTML and CSS.</p></li>
             </ul>
         </div>
     </div>
-    <!--End of Experiences-->
+    
     <!--Academic PROJECTS-->
     <div class="row">
-        <div class="col-md-12">
-            <h3 class="font_color_blue">ACADEMIC PROJECT</h3>
-            <h4 class="h4padding"><a href="https://web.njit.edu/~bx34/portfolio/">Financial Portfolio Optimization Web Application</a>, NJIT, Sep. 2016 - Dec. 2016</h4>
-            <ul>
-                <li><p>Please use username: sw439 and password: 1234 to login.</p></li>
-                <li><p>Implemented Buy/Sell stocks and Deposit/Withdraw functions using PHP, JavaScript.</p></li>
-                <li><p>Developed real-time stock price tracking fuctions using MySQL and Ajax.</p></li>
-                <li><p>Contributed to database design and creation using MySQL.</p></li>
-                <li><p>Designed and implemented portfolio optimization function.</p></li>
-                <li><p>Contributed to UML documentations (UCD, AOD, CID, CRD, etc.)</p></li>
-            </ul>
+        <h3 class="padding_down_h3"><i class="fas fa-file-code icon_h3"></i>PROJECTS</h3>
+        <div class="col-sm-4">
+            <div class="progress" id="progressBar_1"></div>
+            <h4 class="h4padding">Financial Portfolio Optimization Web Application</h4>
+            <p>It is a stock trading and portfolio optimization App using real-time stock price. Please use username: sw439 and password: 1234 to login.</p>
+            <p>Skills: PHP, HTML, Bootstrap, JavaScript, MySQL, Ajax</p>
+            <div>
+                <a href="https://web.njit.edu/~bx34/portfolio/" class="btn btn-outline-secondary icon_between" role="button">Demo</a>
+                <a href="https://github.com/Fiona0205/Financial_Portfolio_Optimization" class="btn btn-outline-secondary icon_between">Github</a>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="progress" id="progressBar_2"></div>
+            <h4 class="h4padding">Software Quality Assurance</h4>
+            <p>Performed GUI testing, integration testing and unit testing for course CS684 Software Test and Quality Assurance in NJIT.</p>
+            <p>Skills: PHP Unit, Python, Selenium WebDriver</p>
+        </div>
+        <div class="col-sm-4">
+            <div class="progress" id="progressBar_3"></div>
+            <h4 class="h4padding">Youtube Search App</h4>
+            <p>ReacJS project for Udemy course - Modern React with Redux</p>
+            <p>Skills: React.js, Youtube Data API, HTML, JavaScript/ES6</p>
+            <div><a href="https://github.com/Fiona0205/ReduxYoutubeSearchApp" class="btn btn-outline-secondary icon_between">Github</a></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="progress" id="progressBar_4"></div>
+            <h4 class="h4padding">Book List App</h4>
+            <p>ReacJS Redux project for Udemy course - Modern React with Redux</p>
+            <p>Skills: React.js, Redux, HTML, JavaScript/ES6</p>
+            <div><a href="" class="btn btn-outline-secondary icon_between">Github</a></div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="progress" id="progressBar_5"></div>
+            <h4 class="h4padding">Resume</h4>
+            <p>Resume website for personal use.</p>
+            <p>Skills: Bootstrap, HTML, JavaScript</p>
+        </div> 
+        
+        <div class="col-sm-4">
+            <div class="progress" id="progressBar_6"></div>
+            <h4 class="h4padding">Quantitative Trading System</h4>
+            <p>It is a master project that finding a trading strategy and analyzing its performance.</p>
+            <p>Skills: R, R Shiny</p>
         </div>
     </div>
     <!--End of Academic Projects-->
     <!--ACTIVITIES-->
     <div class="row">
         <div class="col-md-12">
-            <h3 class="font_color_blue">ACTIVITIES</h3>
+            <h3><i class="fas fa-user icon_h3"></i>ACTIVITIES</h3>
             <h4 class="h4padding">Hackathon: Google Cloud Machine Learning at Rutgers Newark, Oct. 2016</h4>
             <ul><li><p>Participated in a Hackathon event sponsored by Google Developer's Group organized by Rutgers Business School.</p></li></ul>
             <h4 class="h4padding">Pitch Competition: US-China Summit on Innovation and Entrepreneurship at Carnegie Mellon University, Apr. 2016</h4>
@@ -123,8 +143,8 @@
     <div class="row" id="footer">
         <div class="col-md-12">
         <div>Contact me: 
-            <a target="_blank" href="https://www.linkedin.com/in/shu-wang-0205"><i class="fa fa-linkedin fa-lg icon_between" aria-hidden="true"></i></a>
-            <a target="_blank" href="https://github.com/Fiona0205"><i class="fa fa-github fa-lg icon_between" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/shu-wang-0205"><i class="fab fa-linkedin icon_between" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://github.com/Fiona0205"><i class="fab fa-github-square icon_between" aria-hidden="true"></i></a>
         </div>
         </div>
     </div>
@@ -136,6 +156,7 @@
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
 <script src="js/stats.js"></script>
-
+<script src="js/progressbar.js"></script>
+<script src="js/progressbar.min.js"></script>
 </body>
 </html>
