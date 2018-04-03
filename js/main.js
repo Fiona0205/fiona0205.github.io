@@ -184,4 +184,5 @@ window.onload = function() {
     displayProgressBar('#progressBar_4', '50%');
     displayProgressBar('#progressBar_5', '100%');
     displayProgressBar('#progressBar_6', '60%');
+    displayProgressBar('#progressBar_7', '80%');
 }
